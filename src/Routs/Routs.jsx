@@ -5,6 +5,10 @@ const route = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    loader: () =>
+      fetch(
+        `https://go-travel-server-eixjmn8b8-ysyasins-projects.vercel.app/locations`
+      ),
   },
 ]);
 

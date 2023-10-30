@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ isSearch }) => {
   return (
-    <div className="flex text-white items-center gap-4 w-11/12 mx-auto">
+    <div className="flex h-fit text-white items-center gap-4 w-11/12 mx-auto">
       <div className="">
         <img src={logo} width={"50%"} height={"10px"} alt="" />
       </div>

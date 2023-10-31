@@ -5,7 +5,11 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ isSearch }) => {
   return (
-    <div className="flex h-fit text-white items-center gap-4 w-11/12 mx-auto">
+    <div
+      className={`flex h-fit ${
+        (isSearch && "text-white") || "text-black"
+      } items-center gap-4 w-11/12 mx-auto`}
+    >
       <div className="">
         <img src={logo} width={"50%"} height={"10px"} alt="" />
       </div>
@@ -43,9 +47,11 @@ const Navbar = ({ isSearch }) => {
         </ul>
       </div>
       <div className="ms-auto">
-        <button className="bg-rose-400 hover:bg-red-600 py-3 px-8 rounded-md font-semibold text-xl">
-          Login
-        </button>
+        <Link to="/login">
+          <button className="bg-rose-400 hover:bg-red-600 py-3 px-8 rounded-md font-semibold text-xl">
+            Login
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -1,0 +1,32 @@
+.rangeDate-picker {
+    overflow: scroll;
+}
+
+.centered-text {
+    text-align: center;
+    position: relative;
+}
+
+.centered-text::before,
+.centered-text::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #000;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+}
+
+.centered-text::after {
+    right: 0;
+}
+
+.centered-text::before {
+    left: 0;
+}
+
+.dialog-date-picker {
+    left: -204px !important;
+    top: -248px !important;
+}

@@ -6,3 +6,13 @@
 h1 {
     font-family: 'Oswald', sans-serif;
 }
+
+body {
+    overflow: hidden;
+}
+
+#cardCarosel {
+    margin-right: -70%;
+}
+
+#dtls {}
